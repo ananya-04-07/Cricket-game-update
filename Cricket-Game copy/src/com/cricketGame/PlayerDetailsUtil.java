@@ -32,7 +32,6 @@ public class PlayerDetailsUtil {
         this.jerseyColor = jerseyColor;
     }
 
-
     public void setOverPlayed(float overPlayed) {
         this.overPlayed = overPlayed;
     }
@@ -113,14 +112,12 @@ public class PlayerDetailsUtil {
     public static List playerName(String team1, String team2) {
         List<String> playerName = new ArrayList<>();
         for (Player c : Player.values()) {
-            if (c.toString().equalsIgnoreCase(team1))
-            {
+            if (c.toString().equalsIgnoreCase(team1)) {
                 playerName.addAll(c.getS1());
             }
         }
         for (Player c : Player.values()) {
-            if (c.toString().equalsIgnoreCase(team2))
-            {
+            if (c.toString().equalsIgnoreCase(team2)) {
                 playerName.addAll(c.getS1());
             }
         }
@@ -132,9 +129,8 @@ public class PlayerDetailsUtil {
     public static String jerseyColor(String team) {
         String color = "";
         for (Player c : Player.values()) {
-            if (c.toString().equalsIgnoreCase(team))
-            {
-               color = c.getJerserColor();
+            if (c.toString().equalsIgnoreCase(team)) {
+                color = c.getJerserColor();
             }
         }
         return color;

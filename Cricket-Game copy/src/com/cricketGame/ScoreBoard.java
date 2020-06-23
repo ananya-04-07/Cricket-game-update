@@ -41,7 +41,7 @@ public class ScoreBoard {
                 System.out.println(ScoreBoard.score.get(player2).getRun());
             }
     }
-    public static void insertData(String player1,String team,String jersey,String playerType)
+    public static void getPlayerDetails(String player1, String team, String jersey, String playerType)
     {
         scoreBoard = ScoreBoard.getInstance();
         if(!score.containsKey(player1)) {
